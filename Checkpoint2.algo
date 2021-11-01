@@ -1,0 +1,31 @@
+ALGORITHM  Sum of same elements
+VAR
+    Set1, Set 2 : ARRAY_OF INTEGER ;
+    Sum : INTEGER = 0 ;
+    i,j : INTEGER;
+BEGIN
+  FOR i FROM 0 TO set1.length STEP 1  DO
+  FOR j FROM 0 TO set2.length STEP 1  DO
+      IF (set1[i]=set2[j]) THEN
+          Sum = sum+set1[i]+set2[j]
+      END_IF
+  END_FOR
+  END_FOR  
+  Write (sum)
+END
+ALGORITHM Sum of different elements
+VAR
+     Set1, Set 2 : ARRAY_OF INTEGER ;
+    Sum : INTEGER = 0 ;
+    i,j : INTEGER;
+BEGIN
+FOR i FROM 0 TO set1.length STEP 1  DO
+  FOR j FROM 0 TO set2.length STEP 1  DO
+      IF (set1[i]<>set2[j]) THEN
+          Sum = sum+set1[i]+set2[j]
+      END_IF
+  END_FOR
+  END_FOR  
+  Write (sum)
+  END
+  
